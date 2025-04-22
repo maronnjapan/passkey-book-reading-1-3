@@ -113,6 +113,10 @@ transition: fade-out
 
 ## トークンが適切に削除できていないことによるリンクの使い回し
 
+<br />
+
+デモ用のアプリのコードは[こちら](https://github.com/maronnjapan/passkey-book-reading-1-3/tree/main/magic-link-app)においてあります
+
 ---
 transition: fade-out
 ---
