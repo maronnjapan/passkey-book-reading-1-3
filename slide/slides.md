@@ -40,7 +40,7 @@ transition: fade-out
 <h2 v-click>なら、そもそもパスワードを使わせない認証方法にしよう</h2>
 
 <div v-click style="position:absolute;top:0;left:0; height:100vh;width:100%;">
-<SlideTitle >
+<SlideTitle :isShadow="true">
 このアプローチによる認証が<br/>パスワードレス認証
 </SlideTitle>
 </div>
@@ -108,10 +108,10 @@ transition: fade-out
 ---
 # 以下のマジックリンクを使用することによるリスクをデモします
 
-## セッションが異なるブラウザで作成される
+## ①セッションが異なるブラウザで作成される
 <br />
 
-## トークンが適切に削除できていないことによるリンクの使い回し
+## ②トークンが適切に削除できていないことによるリンクの使い回し
 
 <br />
 
@@ -125,7 +125,9 @@ transition: fade-out
 ## (実は前職でマジックリンクを自前で実装したことがあります)
 
 <SlideTitle v-click>
-認証情報を持つのはそれだけでリスクになる
+認証情報を持つのは
+<br />
+それだけでリスクになる
 </SlideTitle>
 
 ---
@@ -173,7 +175,7 @@ transition: fade-out
 transition: fade-out
 ---
 
-## OTP入力の手間の対応策①：autocomplete="one-time-code"を設定
+## 入力の手間の対応策①：autocomplete="one-time-code"を設定
 <div style="display:flex;justify-content:center;height:90%;flex-direction:column;">
 <div style="display:flex;justify-content:center;height:80%;">
 <video controls width="250" style="height:100%;">
@@ -200,7 +202,7 @@ transition: fade-out
 transition: fade-out
 ---
 
-## OTP入力の手間の対応策②：WebOTP APIの使用
+## 入力の手間の対応策②：WebOTP APIの使用
 <div style="display:flex;justify-content:center;height:90%;flex-direction:column;">
 <div style="display:flex;justify-content:center;height:80%;">
 <video controls width="250" style="height:100%;">
